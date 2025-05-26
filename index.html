@@ -24,6 +24,15 @@
         hr {
           margin: 0;
         }
+        .education-dp {
+          text-align: right;
+        }
+        .experience .flex-between {
+          align-items: start;
+        }
+        .job-date{
+          margin-top: 50px;
+        }
         .summary p {
             text-align: justify;
         }
@@ -120,7 +129,7 @@
     
         <div class="project flex-between">
           <div><a href="https://bahioiiia.github.io/P14-GreenHarvest/"><strong>Organic vegetables shop</strong></a><br>
-            GitHub: <a href="https://github.com/bahioiiia/P14-GreenHarvest">https://github.com/bahioiiia/P14-GreenHarvest</a> <br>
+            <a href="https://github.com/bahioiiia/P14-GreenHarvest">https://github.com/bahioiiia/P14-GreenHarvest</a> <br>
             Responsive static website<br>
             Developed the website component, ensuring consistent design and responsiveness across devices<br>
             <strong>Tech stack:</strong> HTML5, CSS3
@@ -130,7 +139,7 @@
     
         <div class="project flex-between">
           <div><a href="https://kost-prog.github.io/masakryczne-slimaki/"><strong>Clients resume</strong></a><br>
-            GitHub: <a href="https://github.com/Kost-prog/masakryczne-slimaki">https://github.com/Kost-prog/masakryczne-slimaki</a> <br>
+            <a href="https://github.com/Kost-prog/masakryczne-slimaki">https://github.com/Kost-prog/masakryczne-slimaki</a> <br>
             Responsive interactive website featuring animations and dynamic UI elements<br>
             Implemented an interactive section for dynamic content toggling<br>
             <strong>Tech stack:</strong> HTML5, CSS3, JavaScript
@@ -154,9 +163,10 @@
         <h3 class="section_title">Work experience</h3>
         <hr>
     
-        <div class="job flex-between">
+        <div class="job flex-between ">
           <div>
-            <strong>25hours Hotel Company</strong> - Night Auditor<br>
+            <strong>25hours Hotel Company</strong>  <br>
+            <strong>Night Auditor</strong>
             <ul>
                 <li>Guest check-in/out operations</li>  
                 <li>Overnight reports & statistics</li>  
@@ -164,7 +174,7 @@
                 <li><strong>Achievement:</strong> Enhanced reporting accuracy through basic programming tools</li>                  
             </ul>
           </div>
-          <div>Oct 2022 - Oct 2024</div>
+          <div class="job-date">Oct 2022 - Oct 2024</div>
         </div>
 
     </section>
@@ -179,29 +189,27 @@
               Bachelor`s Degree in German Philology 
             </div>
             <div></div>
-            <div>Sumy, Ukraine <br> Sep 2018 - Jun 2022</div>
+            <div class="education-dp">Sumy, Ukraine <br> 2018 - 2022</div>
+         </div>
+         <div class="education-block flex-between">
+          <div>
+            <strong>IT School GoIT</strong><br>
+            Fullstack Developing 
           </div>
+          <div></div>
+          <div> 2024 - 2025</div>
+       </div>
         </section>
-      
-    
-      <section class="training">
-        <h3 class="section_title">Courses</h3>
-        <hr>
-        <div class="course flex-between">
-            <div>
-                <strong>IT School GoIT</strong><br>
-                Fullstack Developer
-            </div>
-            <div>Feb 2024 - Jul 2025</div>
-          </div>
-        </section>
-      
     
       <section class="languages">
         <h3 class="section_title">Languages</h3>
         <hr>
-
-        <p>English - Advanced   |   German - Intermediate   |   Ukrainian - Native   |   Russian - Native</p>
+        <div class="flex-between">
+          <div><p>English - Advanced</p></div>
+          <div><p>German - Intermediate</p></div>
+          <div><p>Ukrainian - Native</p></div>
+          <div><p>Russian - Native</p></div>             
+        </div>
       </section>
     
 </body>

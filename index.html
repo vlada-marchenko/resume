@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
         margin: auto;
         color: #333;
         max-width: 900px;
+        padding: 0 30px;
       }
       h1,
       h2 {
@@ -82,13 +83,15 @@
       }
       a {
         color: unset;
-        text-decoration: none;
       }
       a:hover {
         text-decoration: underline;
       }
       .bold {
         font-weight: bold;
+      }
+      .name {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -121,7 +124,7 @@
       <p>
         Junior Front-End Developer with a focus on building visually appealing,
         functional, and responsive websites. Skilled in HTML, CSS, JavaScript,
-        and React, with hands-on use of Git and modern development workflows.
+        React and Next.js with hands-on use of Git and modern development workflows.
         Eager to contribute to an innovative team where I can apply my skills,
         take on real-world challenges, and continue growing as a developer in a
         supportive environment.
@@ -153,23 +156,49 @@
 
       <div class="project flex-between">
         <div>
-          <a href="https://psychologists-app-nine.vercel.app"
+          <a class="name" href="https://read-journey-pied.vercel.app"
+            ><strong>Read journey app</strong></a
+          ><br />
+          <a href="https://github.com/vlada-marchenko/read_journey"
+            >https://github.com/vlada-marchenko/read_journey</a
+          >
+          <br />
+          Responsive reading-tracker web app with recommended books, personal
+          library, and reading progress <br />
+          (start/stop sessions, diary history, and statistics). <br />
+          Implemented reading sessions flow (start/stop with page validation via
+          Yup), diary entries + deletion, <br> progress indicators (dynamic bars + circular
+          statistics), and added API error handling with React Toastify.
+          <br />
+          <strong>Tech stack:</strong> HTML5, React, TypeScript, React Router,
+          CSS Modules, Axios, Yup, React Toastify
+        </div>
+        <div>2026</div>
+      </div>
+
+      <div class="project flex-between">
+        <div>
+          <a class="name" href="https://psychologists-app-nine.vercel.app"
             ><strong>Psychologists services app</strong></a
           ><br />
           <a href="https://github.com/vlada-marchenko/psychologists_app"
             >https://github.com/vlada-marchenko/psychologists_app</a
           >
           <br />
-          Psychologists booking web app with searchable catalog, filters, and user-specific favourites<br />
-          Implemented protected favourites feature (heart button), persisted state via localStorage, <br> and validated appointment modal forms<br />
-          <strong>Tech stack:</strong> HTML5, React, TypeScript, React Router, CSS Modules, Firebase Auth
+          Psychologists booking web app with searchable catalog, filters, and
+          user-specific favourites<br />
+          Implemented protected favourites feature (heart button), persisted
+          state via localStorage, <br />
+          and validated appointment modal forms<br />
+          <strong>Tech stack:</strong> HTML5, React, TypeScript, React Router,
+          CSS Modules, Firebase Auth
         </div>
         <div>2025</div>
       </div>
 
       <div class="project flex-between">
         <div>
-          <a href="https://campers-teal-omega.vercel.app"
+          <a class="name" href="https://campers-teal-omega.vercel.app"
             ><strong>Travel trucks web app</strong></a
           ><br />
           <a href="https://github.com/vlada-marchenko/campers"
@@ -184,10 +213,10 @@
         </div>
         <div>2025</div>
       </div>
-
+      <!-- 
       <div class="project flex-between">
         <div>
-          <a href="https://project-stork-front.vercel.app"
+          <a class="name" href="https://project-stork-front.vercel.app"
             ><strong>Online pragnancy tracker</strong></a
           ><br />
           <a href="https://github.com/Vyacheslav-Chop/project-stork-front"
@@ -201,11 +230,11 @@
           <strong>Tech stack:</strong> HTML5, CSS3, TypeScript, Next.js, Node.js
         </div>
         <div>2025</div>
-      </div>
+      </div> -->
 
       <div class="project flex-between">
         <div>
-          <a href="https://serbyns.github.io/STP-9260/"
+          <a class="name" href="https://serbyns.github.io/STP-9260/"
             ><strong>Game Landing Page</strong></a
           ><br />
           <a href="https://github.com/SerbynS/STP-9260"
@@ -221,9 +250,9 @@
         <div>2025</div>
       </div>
 
-      <div class="project flex-between">
+      <!-- <div class="project flex-between">
         <div>
-          <a href="https://kost-prog.github.io/masakryczne-slimaki/"
+          <a class="name" href="https://kost-prog.github.io/masakryczne-slimaki/"
             ><strong>Clients resume</strong></a
           ><br />
           <a href="https://github.com/Kost-prog/masakryczne-slimaki"
@@ -236,7 +265,7 @@
           <strong>Tech stack:</strong> HTML5, CSS3, JavaScript
         </div>
         <div>2025</div>
-      </div>
+      </div> -->
 
       <!-- <div class="project flex-between">
         <div>

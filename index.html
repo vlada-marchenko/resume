@@ -10,7 +10,7 @@
         line-height: 1.5;
         margin: auto;
         color: #333;
-        max-width: 1050px;
+        max-width: 1250px;
         padding: 40px 20px;
       }
 
@@ -80,9 +80,15 @@
         font-size: 15px;
       }
       .skills-list {
-        text-align: center;
         font-size: 14px;
         font-weight: 500;
+      }
+      .skills-list .category {
+        margin-bottom: 4px;
+      }
+      .skills-list .category-label {
+        font-weight: 700;
+        color: #333;
       }
 
       .project-title {
@@ -125,7 +131,7 @@
   <body>
     <header class="header">
       <h1>Vlada Marchenko</h1>
-      <h2>Frontend Developer | Available for Remote Projects</h2>
+      <h2>Frontend Developer | Available for B2B Contracts</h2>
       <div class="contact">
         <a style="color: #000" href="tel:+491741662933">+49 174 166 2933</a> |
         <a style="color: #000" href="mailto:vvvvadya44@gmail.com"
@@ -159,12 +165,12 @@
       <h3 class="section_title">Summary</h3>
       <hr />
       <p>
-        Frontend Developer with a focus on building high-performance, responsive
-        web applications using
-        <strong>React, Next.js, and TypeScript</strong>. Experienced in
-        implementing secure authentication, RESTful API integrations, and
-        complex state management. Committed to delivering clean code and
-        intuitive user interfaces for modern web solutions.
+        Frontend Developer specializing in React, Next.js, and TypeScript. I
+        build production-ready web applications — from authentication systems
+        and REST API integrations to full-stack dashboards with MongoDB
+        backends. Available for remote B2B contracts. I deliver clean, tested
+        code independently, communicate clearly in English, and take projects
+        from Figma spec to deployed product.
       </p>
     </section>
 
@@ -172,10 +178,19 @@
       <h3 class="section_title">Technical Stack</h3>
       <hr />
       <div class="skills-list">
-        HTML5 · CSS3 · CSS Modules · Tailwind CSS · JavaScript · TypeScript ·
-        React · Next.js · Axios · Firebase Auth · JWT Authentication · TanStack
-        Query · Yup · React Toastify · Zustand · React Testing Library · Vitest
-        · Playwright · Node.js · MongoDB · Git · Figma · REST APIs · Vercel · Render
+        <div class="category">
+          <span class="category-label">Frontend:</span> React · Next.js ·
+          TypeScript · TanStack Query · Zustand · Tailwind CSS · HTML5 · CSS
+          Modules
+        </div>
+        <div class="category">
+          <span class="category-label">Testing:</span> Vitest · React Testing
+          Library · Playwright
+        </div>
+        <div class="category">
+          <span class="category-label">Backend & Tools:</span> Node.js · Express
+          · MongoDB · REST APIs · Git · Figma · Firebase Auth · JWT
+        </div>
       </div>
     </section>
 
@@ -199,13 +214,13 @@
           Full-featured streaming UI with TMDB API integration, dynamic routing
           for movies and series, swipeable hero carousel, genre toggles, seasons
           and episodes with Zustand state management, Formik/Yup support form,
-          and mobile-first responsive design across 375-1920px breakpoints.
-          Added unit tests for movie streaming flows using React Testing Library
-          and Vitest, implemented e2e tests with Playwright, and implemented
-          image lazy-loading reducing initial load time by 40%.
-
+          and mobile-first responsive design across 375-1920px, 4 breakpoints.
+          Added 12 unit tests for movie streaming flows using React Testing
+          Library and Vitest, implemented e2e tests with Playwright, and
+          implemented image lazy-loading reducing initial load time by 40%.
           <div class="tech-stack">
-            Next.js, TypeScript, TanStack Query, CSS Modules, TMDB API, Vercel.
+            Next.js, TypeScript, TanStack Query, Vitest, Playwright, CSS
+            Modules, TMDB API, Vercel.
           </div>
         </div>
         <div class="date-right">2026</div>
@@ -223,11 +238,13 @@
               >Backend</a
             >
           </div>
-          Full-stack pharmacy inventory and sales platform with secure JWT
-          authentication, session persistence, dynamic shop-specific routing,
-          product management with image upload, and a statistics page using
-          Next.js intercepting route modals. Express/MongoDB backend deployed on
-          Render.
+          Independently designed and built a full-stack pharmacy management
+          system. Features JWT authentication with token refresh and
+          auto-logout, shop-specific dynamic routing, inventory CRUD with image
+          upload, sales tracking with revenue analytics, and low-stock alerts.
+          Statistics page built with Next.js intercepting route modals.
+          Express/MongoDB backend deployed on Render. 5 dashboard modules,
+          responsive across mobile, tablet, and desktop.
           <div class="tech-stack">
             Next.js, TypeScript, Node.js, Express, MongoDB, Axios.
           </div>
@@ -238,15 +255,16 @@
       <div class="flex-row">
         <div class="content-left">
           <a href="https://read-journey-pied.vercel.app" class="project-title"
-            >Read Journey SaaS App</a
+            >Read Journey - Reading Tracker App</a
           >
           <div class="links">
             <a href="https://read-journey-pied.vercel.app">Live Demo</a> |
             <a href="https://github.com/vlada-marchenko/read_journey">GitHub</a>
           </div>
-          Reading tracker with real-time statistics, session flow management,
-          dynamic progress indicators, and circular statistics charts. Built
-          robust form validation with Yup.
+          Reading tracker SPA with 4 pages — recommended books, personal
+          library, active reading session, and progress statistics. Features
+          real-time circular progress charts, session flow management, and form
+          validation across 2 auth forms with Yup.
           <div class="tech-stack">
             React, TypeScript, CSS Modules, Axios, Yup, React Toastify.
           </div>
@@ -257,7 +275,7 @@
       <div class="flex-row">
         <div class="content-left">
           <a
-            href="https://psychologists-app-nine.vercel.app"
+            href="https://project-stork-front-six.vercel.app"
             class="project-title"
             >Leleka — Pregnancy Tracker (Team Project)</a
           >
@@ -273,15 +291,15 @@
             >
           </div>
           Pregnancy tracker built through agile collaboration across a
-          cross-functional team. Implemented baby and mom state cards for the
-          journey page and the private week endpoint on the Express backend.
-          Later independently diagnosed and restored a broken production
-          deployment: resolved cross-domain auth issues (CORS, sameSite cookies,
-          httpOnly token constraints) and fixed an infinite spinner caused by an
-          unhandled promise rejection.
+          cross-functional team of 13 contributors. Implemented baby and mom
+          state cards for the journey page and the private week endpoint on the
+          Express backend. Later independently diagnosed and restored a broken
+          production deployment within 12 hours: resolved cross-domain auth
+          issues (CORS, sameSite cookies, httpOnly token constraints) and fixed
+          an infinite spinner caused by an unhandled promise rejection.
           <div class="tech-stack">
             Next.js, TypeScript, Node.js, Express, MongoDB, Zustand, TanStack
-            Query, Vercel, Render
+            Query, Vercel, Render.
           </div>
         </div>
         <div class="date-right">2025</div>
@@ -316,10 +334,11 @@
       <hr />
       <div class="flex-row">
         <div class="content-left">
-          <strong>IT School GoIT</strong> — Fullstack Development Course<br />
-          872 hours of intensive training in modern JavaScript ecosystems,
-          RESTful API integration, and project delivery from design spec to
-          deployed product.
+          <strong>GoIT Fullstack Development</strong> — Career Transition
+          Program<br />
+          872 hours of project-based training in React, Next.js, TypeScript,
+          Node.js, and MongoDB. Self-taught testing beyond the curriculum — unit
+          tests with React Testing Library/Vitest and e2e with Playwright.
         </div>
         <div class="date-right">2024 - 2025</div>
       </div>
@@ -327,12 +346,26 @@
       <div class="flex-row">
         <div class="content-left">
           <strong>25hours Hotel Company</strong> — Night Auditor<br />
-          Produced nightly financial reports with zero-error accuracy. Managed
-          50+ guest interactions per shift across multiple languages, resolved
-          issues autonomously under time pressure, and maintained meticulous
-          records in property management systems.
+          Operated independently on overnight shifts with full accountability
+          for financial reporting, guest operations, and issue resolution — no
+          manager on-site.
+          <ul>
+            <li>
+              Produced zero-error nightly financial reports under strict
+              end-of-shift deadlines, maintaining 100% accuracy across a 2-year
+              tenure
+            </li>
+            <li>
+              Resolved operational incidents autonomously — diagnosed issues,
+              made decisions, and implemented fixes without escalation
+            </li>
+            <li>
+              Communicated professionally across languages (English, German,
+              Ukrainian, Russian) with international guests and management teams
+            </li>
+          </ul>
         </div>
-        <div class="date-right">2022 - 2024</div>
+        <div class="date-right">Oct 2022 - Oct 2024</div>
       </div>
 
       <div class="flex-row">

@@ -215,13 +215,7 @@
               >GitHub</a
             >
           </div>
-          Full-featured streaming UI with TMDB API integration, dynamic routing
-          for movies and series, swipeable hero carousel, genre toggles, seasons
-          and episodes with Zustand state management, Formik/Yup support form,
-          and mobile-first responsive design across 375-1920px, 4 breakpoints.
-          Added 30+ unit tests for movie streaming flows using React Testing
-          Library and Vitest, implemented 19 e2e tests with Playwright, and
-          implemented image lazy-loading reducing initial load time by 40%.
+Built a streaming UI with TMDB API integration across 6 pages, with dynamic routing for movies and series, a swipeable hero carousel, and season and episode browsing managed with Zustand. Wrote 30+ unit tests with React Testing Library and Vitest and 19 end-to-end tests with Playwright, covering browsing, search, and the support form. Added image lazy-loading, which cut initial load time by 40%. Mobile-first responsive layout across 4 breakpoints.
           <div class="tech-stack">
             Next.js, TypeScript, TanStack Query, Vitest, Playwright, CSS
             Modules, TMDB API, Vercel.
@@ -242,15 +236,10 @@
               >Backend</a
             >
           </div>
-          Independently designed and built a full-stack pharmacy management
-          system. Features JWT authentication with token refresh and
-          auto-logout, shop-specific dynamic routing, inventory CRUD with image
-          upload, sales tracking with revenue analytics, and low-stock alerts.
-          Statistics page built with Next.js intercepting route modals.
-          Express/MongoDB backend deployed on Render. 5 dashboard modules,
-          responsive across mobile, tablet, and desktop.
+Designed and built a full-stack pharmacy management system alone, from database schema to deployment. Built 5 dashboard modules with inventory CRUD and image upload, sales tracking, revenue analytics, and low-stock alerts. Implemented JWT authentication with token refresh, shop-specific dynamic routing, and Next.js intercepting-route modals for editing without leaving the list view. Built 13 REST endpoints with Express and MongoDB, deployed on Render. Responsive across mobile, tablet, and desktop.
           <div class="tech-stack">
-            Next.js, TypeScript, Node.js, Express, MongoDB, Axios.
+            Next.js, TypeScript, Node.js, Express, MongoDB, Axios, CSS
+            Modules, Vercel.
           </div>
         </div>
         <div class="date-right">2026</div>
@@ -258,19 +247,17 @@
 
       <div class="flex-row">
         <div class="content-left">
-          <a href="https://read-journey-pied.vercel.app" class="project-title"
-            >Read Journey - Reading Tracker App</a
+          <a href="https://blog-app-five-ebon-74.vercel.app" class="project-title"
+            >Blog App — Full-Stack Blog Platform</a
           >
           <div class="links">
-            <a href="https://read-journey-pied.vercel.app">Live Demo</a> |
-            <a href="https://github.com/vlada-marchenko/read_journey">GitHub</a>
+            <a href="https://blog-app-five-ebon-74.vercel.app">Live Demo</a> |
+            <a href="https://github.com/vlada-marchenko/blog_app">GitHub</a>
           </div>
-          Reading tracker SPA with 4 pages — recommended books, personal
-          library, active reading session, and progress statistics. Features
-          real-time circular progress charts, session flow management, and form
-          validation across 2 auth forms with Yup.
+Built a full-stack blog with the Next.js App Router as both frontend and backend, with 4 API routes and Zod validation on every request. Implemented Firebase authentication with httpOnly session cookies, with author-only edit and delete enforced on the server. Modeled posts and nested comments in Firestore, with SWR caching, debounced search, tag filtering, and “Load More” pagination. Delivered in 7 days as a technical assignment.
           <div class="tech-stack">
-            React, TypeScript, CSS Modules, Axios, Yup, React Toastify.
+            Next.js, TypeScript, Firebase Auth, Firestore, SWR, Zustand, Zod, React Hook Form, CSS
+            Modules, Vercel.
           </div>
         </div>
         <div class="date-right">2026</div>
@@ -294,13 +281,7 @@
               >Backend</a
             >
           </div>
-          Pregnancy tracker built through agile collaboration across a
-          cross-functional team of 13 contributors. Implemented baby and mom
-          state cards for the journey page and the private week endpoint on the
-          Express backend. Later independently diagnosed and restored a broken
-          production deployment: resolved cross-domain auth
-          issues (CORS, sameSite cookies, httpOnly token constraints) and fixed
-          an infinite spinner caused by an unhandled promise rejection.
+Built a pregnancy tracker in an agile team of 13 developers over 2 weeks. Owned the journey page on the frontend and the private week endpoint on the Express backend. After the team phase, independently diagnosed and fixed production deployment issues: cross-domain auth (CORS, sameSite cookies, httpOnly token limits) and an unhandled promise rejection that [crashed the server]. Result: login and protected pages worked for all users in production.
           <div class="tech-stack">
             Next.js, TypeScript, Node.js, Express, MongoDB, Zustand, TanStack
             Query, Vercel, Render.
